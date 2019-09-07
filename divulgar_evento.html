@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Doivulgar Evento</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/9c2e455b87.js"></script>
+</head>
+<body>
+<!-- Navbar do usuario logado -->
+<nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color: #ff2b34;">
+    <div class="container">
+        <a class="navbar-brand" href="#">doity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItens"
+                aria-controls="navbarItens" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarItens">
+            <div class="nav navbar-nav ml-auto w-100 justify-content-end align-items-center">
+                <a class="nav-item nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fas fa-bell"></i></a>
+                <a class="nav-item nav-link" href="#">
+                    <div class="perfil-info">
+                        <img class="img-responsive avatar" src="https://bit.ly/fcc-relaxing-cat" alt="a cat">
+                        <div class="nome-funcao">
+                            <div class="perfil-nome">Eduardo Leandro</div>
+                            <div class="perfil-funcao">Organizador</div>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Barra do "Inicio" embaixo da navbar-->
+<div class="container-fluid" style="background-color: #fff">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10" style="padding: 16px 32px">
+            <div class="container"><a style="font-weight: bold; color: #000;">INÍCIO</a>
+            </div>
+        </div>
+        <div class="col-11"></div>
+    </div>
+</div>
+
+<!-- Form -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="container form-container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="nomeEvento">Nome do Evento</label>
+                            <input type="text" class="form-control" id="nomeEvento" placeholder="Nome do Evento">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="categoria">Categorias</label>
+                            <select id="categoria" class="form-control">
+                                <option selected>Gastronomico</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="area">Área</label>
+                            <select id="area" class="form-control">
+                                <option selected>Direito</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6 align-items-center">
+                            <label for="descricao">Descrição</label>
+                            <textarea class="form-control" rows="5" id="descricao" placeholder="Descrição"></textarea>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="banner">Banner</label>
+                            <div class="input-banner">
+                                <button id="banner" class="btn btn-outline-light btn-banner escolher"><i class="fas fa-sync-alt"></i></button>
+                                <button class="btn btn-outline-light btn-banner excluir"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="data_inicio">Início</label>
+                            <input type="datetime-local" class="form-control" id="data_inicio" placeholder="Início">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="data_termino">Término</label>
+                            <input type="datetime-local" class="form-control" id="data_termino" placeholder="Término">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="tipo">Tipo</label>
+                            <select id="tipo" class="form-control">
+                                <option selected>Presencial</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="local">Local</label>
+                            <input type="text" class="form-control" id="local" placeholder="Presencial">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="site">Site</label>
+                            <input type="text" class="form-control" id="site" placeholder="exemplo.com.br">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Av. Rua, Logradouro, 777">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="57036390">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Jatiúca">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Maceió">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="estado">Estado</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Alagoas">
+                        </div>
+                    </div>
+
+                    <div class="linha-horizontal"></div>
+
+                    <div class="container form-btns">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-end">
+                                <button class="btn btn-outline-secondary form cancelar">Cancelar</button>
+                            </div>
+                            <div class="col-6 d-flex justify-content-start">
+                                <button type="submit" class="btn form salvar">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-1"></div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

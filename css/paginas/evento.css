@@ -1,0 +1,155 @@
+/******************* 1. Resumo das informações do evento + botoes de ação *******************/
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.resumo-acoes {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.resumo-acoes-imagem {
+    display: flex;
+    flex: 1;
+}
+
+.resumo-acoes-imagem img {
+    width: 100%;
+    max-height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.resumo-acoes-info {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.resumo-acoes-data-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f9fc;
+    padding: 32px;
+    border-bottom-left-radius: 25px;
+
+}
+
+.resumo-acoes-data-horario-dia {
+    font-size: x-large;
+    font-weight: bold;
+    color: #696969;
+}
+
+.resumo-acoes-data-horario-mes {
+    font-size: large;
+    font-weight: bold;
+    color: #808080;
+}
+
+.resumo-acoes-data-horario-horas {
+    margin-top: 32px;
+    color: #d3d3d3;
+    font-size: smaller;
+}
+
+.resumo-acoes-resumo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 32px;
+    flex: 1;
+
+}
+
+.resumo-acoes-resumo-categoria {
+    color: #808080;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.resumo-acoes-resumo-nome {
+    color: #808080;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 16px 8px 8px 0;
+
+}
+
+.resumo-acoes-resumo-local {
+    color: #808080;
+    font-size: small;
+}
+
+.resumo-acoes-resumo-compartilhamento {
+    margin-top: 16px;
+}
+
+.resumo-acoes-resumo-compartilhamento i {
+    margin-left: 16px;
+}
+
+.resumo-acoes-resumo-compartilhamento a {
+    font-weight: bold;
+    font-size: small;
+}
+
+
+.resumo-acoes-acoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+    flex: 1;
+}
+
+.resumo-acoes-acoes-comprar {
+    background-color: #34ce57;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.btn-favoritar-evento {
+    color: grey;
+}
+
+/******************* Sobre *******************/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 25px;
+}
+
+.sobre-titulo {
+    padding: 32px 48px;
+    font-weight: bold;
+}
+
+.sobre-evento-descricao {
+    padding: 0 48px 32px 48px;
+}
+
+/******************* Mapa *******************/
+.local {
+    display: flex;
+    flex: 1;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 32px;
+    border-radius: 25px;
+}
+

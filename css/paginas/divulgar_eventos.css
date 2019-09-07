@@ -1,0 +1,50 @@
+.form-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    padding: 32px;
+}
+
+
+label {
+    font-weight: bold;
+    color: #696969;
+}
+
+.input-banner {
+    display: flex;
+    height: 130px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://bit.ly/fcc-relaxing-cat");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.btn-banner {
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.form-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 32px;
+}
+.btn.form {
+    padding: 16px 32px 16px 32px;
+    font-weight: bold;
+}
+
+.btn.cancelar {
+    align-self: flex-end;
+}
+
+.btn.salvar {
+    background-color: #ff2b34;
+    color: #fff;
+}

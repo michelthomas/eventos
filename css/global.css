@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f9fc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-round-x {
+    border-radius: 50px 50px;
+}
+
+.navbar-round-bottom {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}

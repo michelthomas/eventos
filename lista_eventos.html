@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lista de Eventos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/9c2e455b87.js"></script>
+</head>
+<body>
+
+<!-- Navbar do usuario logado -->
+<nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color: #ff2b34;">
+    <div class="container">
+        <a class="navbar-brand" href="#">doity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItens"
+                aria-controls="navbarItens" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarItens">
+            <div class="nav navbar-nav ml-auto w-100 justify-content-end align-items-center">
+                <a class="nav-item nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fas fa-bell"></i></a>
+                <a class="nav-item nav-link" href="#">
+                    <div class="perfil-info">
+                        <img class="img-responsive avatar" src="https://bit.ly/fcc-relaxing-cat" alt="a cat">
+                        <div class="nome-funcao">
+                            <div class="perfil-nome">Eduardo Leandro</div>
+                            <div class="perfil-funcao">Organizador</div>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Barra do "Inicio" embaixo da navbar-->
+<div class="container-fluid" style="background-color: #fff">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10" style="padding: 16px 32px">
+            <div class="container"><a style="font-weight: bold; color: #000;">INÍCIO</a>
+            </div>
+        </div>
+        <div class="col-11"></div>
+    </div>
+</div>
+
+<!-- Listagem dos eventos -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="container container-eventos">
+
+                <!-- Título e  botão de divulgar-->
+                <div class="container eventos-titulo-botao">
+                    <div class="eventos-nome">
+                        <a style="font-weight: bold; font-size: x-large">Eventos</a>
+                    </div>
+                    <a href="divulgar_evento.html">
+                        <div class="btn btn-divulgar-evento">
+                            Divulgar evento
+                            <div class="btn icon-outside-circle divulgar"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container eventos-visualizacao">
+
+                    <!-- Filtragem -->
+                    <div class=" eventos-filtragem-status">
+                        <div class="eventos-filtragem-status-item">
+                            <div class="texto-status selecionado">Todos (2)</div>
+                        </div>
+                        <div class="eventos-filtragem-status-item">
+                            <div class="texto-status">Publicados (2)</div>
+                        </div>
+                        <div class="eventos-filtragem-status-item">
+                            <div class="texto-status">Não Publicados (0)</div>
+                        </div>
+                        <div class="eventos-filtragem-status-item">
+                            <div class="texto-status">Antigos (4)</div>
+                        </div>
+                    </div>
+                    <div class="linha-horizontal"></div>
+
+                    <!-- Listagem dos cards dos eventos -->
+                    <div class="card-deck">
+                        <div class="card eventos-card">
+                            <div class="evento-status-icone">
+                                <div class="btn icon-outside-circle ok"><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="evento-info">
+                                <div class="evento-data">07/12/2017</div>
+                                <div class="evento-nome"><p>Congresso Internacional de Design de Interface e
+                                    Usabilidade</p>
+                                </div>
+                                <div class="evento-local">Hotel Holiday Inn Express</div>
+                                <div class="evento-cidade-estado">Maceió - AL</div>
+                            </div>
+                            <div class="evento-acoes">
+                                <div class="evento-editar">
+                                    <button class="btn btn-acoes"><i class="fas fa-edit"></i></button>
+                                </div>
+                                <div class="evento-visualizar">
+                                    <button class="btn btn-acoes"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card eventos-card">
+                            <div class="evento-status-icone">
+                                <div class="btn icon-outside-circle atencao"><i class="fas fa-ellipsis-h"></i></div>
+                            </div>
+                            <div class="evento-info">
+                                <div class="evento-data">07/12/2017</div>
+                                <div class="evento-nome"><p>Congresso Internacional de Design de Interface e
+                                    Usabilidade</p>
+                                </div>
+                                <div class="evento-local">Hotel Holiday Inn Express</div>
+                                <div class="evento-cidade-estado">Maceió - AL</div>
+                            </div>
+                            <div class="evento-acoes">
+                                <div class="evento-editar">
+                                    <button class="btn btn-acoes"><i class="fas fa-edit"></i></button>
+                                </div>
+                                <div class="evento-visualizar">
+                                    <button class="btn btn-acoes"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

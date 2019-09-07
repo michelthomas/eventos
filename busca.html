@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Busca</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/9c2e455b87.js"></script>
+</head>
+<body>
+
+<!-- Navbar do visitante -->
+<nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color: #ff2b34;">
+    <div class="container">
+        <a class="navbar-brand" href="#">doity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItens"
+                aria-controls="navbarItens" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarItens">
+            <div class="nav navbar-nav ml-auto w-100 justify-content-end align-items-center">
+                <a class="nav-item nav-link align-self-center" href="#">CONHEÇA A DOITY</a>
+                <a class="nav-item nav-link align-self-center" href="#">BLOG</a>
+                <a class="nav-item p-2">
+                    <button class="btn btn-round-x btn-divulgar-evento-visitante">DIVULGAR EVENTO</button>
+                </a>
+                <a class="nav-item p-2">
+                    <button class="btn btn-round-x btn-login">LOGIN</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Barra do "Inicio" embaixo da navbar-->
+<div class="container-fluid navbar-round-bottom" style="background-color: #ff2b34">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10" style="padding: 16px 32px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="texto-inicio">Explore eventos ao redor do Brasil</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-busca-evento" placeholder="Que tipo de evento?"
+                                   aria-label="Username"
+                                   aria-describedby="btn-buscar">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary btn-round-x btn-busca-evento" type="button"
+                                        id="btn-buscar"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <select class="custom-select input-busca-evento " id="area">
+                            <option selected>Escolha uma área</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row>">
+                    <div class="col-12">
+                        <div class="card-deck card-deck-area">
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                            <div class="card card-area-busca">
+                                <i class="fas fa-graduation-cap"></i>
+                                <a>Academicos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-11"></div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="row resultado-busca">
+                <div class="col-12">
+                    <a class="texto-resultado-busca">
+                        Foram encontrados 234 resultados para "
+                        <a class="text-busca" style="color: #ff2b34; font-weight: bold">uns eventos aí</a>
+                        ":
+                    </a>
+                    <div class="container card-deck-resultado">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top resultado-img" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a class="resultado-data">07 SET 2019</a>
+                                            <a class="resultado-nome">Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a class="resultado-local">Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card card-resultado-busca">
+                                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="resultado-info">
+                                            <a>07 SET 2019</a>
+                                            <a>Semanda de Geografica da UNEAL Edicao 2019</a>
+                                            <a>Câmara dos Dirigentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+<!-- Footer -->
+<footer class="container-fluid" style="background-color: #4b4b4b">
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="footer">
+                    <div class="logo"><img src="https://doity.com.br/theme/Doity/img/logo_doity.png"
+                                           alt="logo da doity"></div>
+                    <div class="links">
+                        <a>SOBRE A DOITY</a>
+                        <a>BLOG</a>
+                    </div>
+                    <div class="redes-sociais">
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-instagram"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-twitter"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.input-busca-evento {
+    border-radius: 50px 50px;
+    border-width: 0;
+}
+
+.btn-busca-evento {
+    background-color: #fff;
+    border-width: 0;
+}
+
+.btn-divulgar-evento-visitante {
+    background-color: #fff;
+    color: #ff2b34;
+    font-weight: bold;
+}
+
+.btn-login {
+    border-width: thin;
+    border-color: #fff;
+    color: #fff;
+}

@@ -1,0 +1,75 @@
+.texto-inicio {
+    color: #fff;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 8px;
+}
+
+.card-deck-area {
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.card-area-busca {
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #D41018;
+    color: #fff;
+    font-size: small;
+}
+
+.card-area-busca:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resultado-busca {
+    padding: 32px;
+}
+
+.texto-resultado-busca, .text-busca {
+    font-size: x-large;
+}
+
+
+.card-deck-resultado {
+    padding: 32px 0 32px 0;
+}
+
+.card-resultado-busca {
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.resultado-img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.resultado-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-data {
+    font-size: small;
+    color: #696969;
+    font-weight: bold;
+}
+
+.resultado-nome {
+    font-size: large;
+    color: #696969;
+    font-weight: bold;
+}
+
+.resultado-local {
+    font-size: small;
+    color: #696969;
+    font-weight: bold;
+}

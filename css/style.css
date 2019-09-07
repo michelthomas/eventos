@@ -1,0 +1,17 @@
+@import "global.css";
+@import "componentes/navbar_logado.css";
+@import "componentes/navbar_visitante.css";
+@import "componentes/footer.css";
+@import "paginas/lista_eventos.css";
+@import "paginas/divulgar_eventos.css";
+@import "paginas/evento.css";
+@import "paginas/busca.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f9fc;
+}
+
+a:hover {
+    text-decoration: none;
+}

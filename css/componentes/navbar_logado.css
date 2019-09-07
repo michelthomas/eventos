@@ -1,0 +1,43 @@
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.nome-funcao {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.perfil-nome {
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.perfil-funcao {
+    font-size: xx-small;
+}

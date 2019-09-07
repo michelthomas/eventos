@@ -1,0 +1,170 @@
+
+.container-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.eventos-titulo-botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.btn-divulgar-evento {
+    background-color: #ff2b34;
+    color: #ffffff;
+    font-size: small;
+    border-radius: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.icon-outside-circle.divulgar {
+    margin-left: 8px;
+    background-color: #a71d2a;
+}
+
+.btn-divulgar-evento:hover {
+    color: rgba(255,255,255,.75)
+}
+
+
+/********* Filtragem *********/
+.eventos-visualizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos-filtragem-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.eventos-filtragem-status-item {
+    padding-right: 16px;
+}
+
+.texto-status {
+    color: #808080;
+    font-size: small;
+}
+
+.texto-status.selecionado {
+    color: #000000;
+    font-weight: bold;
+}
+
+.linha-horizontal {
+    margin-top: 2px;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+/********* Cards *********/
+.eventos-lista-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.eventos-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 16px;
+}
+
+.eventos-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/********* Ícones do status *********/
+.evento-status-icone {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.btn.icon-outside-circle {
+    display: flex;
+    color: #ffffff;
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn.icon-outside-circle.botao-divulgar {
+    background-color: #34ce57;
+}
+.btn.icon-outside-circle.ok {
+    background-color: #34ce57;
+}
+
+.btn.icon-outside-circle.atencao {
+    background-color: #ffc107;
+}
+
+
+/********* Informações do evento no card *********/
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 16px;
+}
+
+.evento-data {
+    font-size: small;
+    color: #808080;
+}
+
+.evento-nome {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.evento-local {
+    color: #808080;
+    font-size: small;
+}
+
+.evento-cidade-estado {
+    color: #808080;
+    font-size: small;
+}
+
+
+/********* Ícones das ações do card(editar e visualizar) *********/
+.evento-acoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 40px;
+    margin: 16px;
+}
+
+.evento-editar {
+    margin-right: 8px;
+}
+
+.btn-acoes {
+    background-color: lightgray;
+    border-radius: 50%;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Evento</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/9c2e455b87.js"></script>
+</head>
+<body>
+
+<!-- Navbar do visitante -->
+<nav class="navbar navbar-expand-sm navbar-dark navbar-round-bottom justify-content-center py-4" style="background-color: #ff2b34;">
+    <div class="container">
+        <a class="navbar-brand" href="#">doity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItens"
+                aria-controls="navbarItens" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItens">
+
+            <a class="nav-item px-5">
+                <form class="form-inline d-inline w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-busca-evento" placeholder="Que tipo de evento?"
+                               aria-label="Username"
+                               aria-describedby="btn-buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary btn-round-x btn-busca-evento" type="button"
+                                    id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </a>
+            <div class="nav navbar-nav  ">
+                <a class="nav-item nav-link align-self-center" href="#">CONHEÇA A DOITY</a>
+                <a class="nav-item nav-link align-self-center" href="#">BLOG</a>
+                <a class="nav-item p-2">
+                    <button class="btn btn-round-x btn-divulgar-evento-visitante">DIVULGAR EVENTO</button>
+                </a>
+                <a class="nav-item p-2">
+                    <button class="btn btn-round-x btn-login">LOGIN</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Visualização das informações do evento em cards -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 evento-info">
+            <div class="card eventos-card resumo-acoes">
+                <div class="resumo-acoes-imagem"><img
+                        src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-evento-moderno_1361-1219.jpg?size=626&ext=jpg"
+                        alt="imagem do banner do evento"></div>
+                <div class="resumo-acoes-info">
+                    <div class="resumo-acoes-data-horario">
+                        <div class="resumo-acoes-data-horario-dia">23</div>
+                        <div class="resumo-acoes-data-horario-mes">AGO</div>
+                        <div class="resumo-acoes-data-horario-horas">19H - 22H</div>
+                    </div>
+                    <div class="resumo-acoes-resumo">
+                        <div class="resumo-acoes-resumo-categoria">MACEIO | GASTRONOMICOS</div>
+                        <div class="resumo-acoes-resumo-nome">Popload Festival <i class="fas fa-certificate" style="color: deepskyblue"></i></div>
+                        <div class="resumo-acoes-resumo-local">Doity Plataforma de Eventos - Maceió, AL</div>
+                        <div class="resumo-acoes-resumo-compartilhamento">
+                            <a class="">COMPARTILHE</a>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="resumo-acoes-acoes">
+                        <button class="btn btn-round-x resumo-acoes-acoes-comprar">COMPRAR INGRESSOS</button>
+                        <button class="btn btn-acoes btn-favoritar-evento"><i class="fas fa-bookmark"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card eventos-card sobre">
+                <div class="sobre-titulo">SOBRE O EVENTO</div>
+                <div class="sobre-evento-descricao">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque ac mauris sed
+                        semper. Mauris sollicitudin sollicitudin libero nec fringilla. Nunc fermentum egestas pharetra.
+                        Integer mattis ipsum blandit ex accumsan tristique. Nam sapien massa, rhoncus sed metus ut,
+                        tempus malesuada lorem. Integer dapibus faucibus nulla eu rutrum. Morbi pharetra mi cursus diam
+                        commodo porttitor.
+
+                        Mauris aliquet orci auctor dui mattis, a pretium risus semper. Integer tortor
+                        augue, gravida vitae urna vel, laoreet semper ante. In elementum nibh sed maximus pretium.
+                        Curabitur in elementum erat, nec rutrum ipsum. Sed quis ipsum viverra, scelerisque dolor quis,
+                        volutpat dui. Mauris quis velit vel felis pharetra tincidunt. Maecenas pellentesque lacinia
+                        justo dictum mollis. Suspendisse luctus ut dui vel elementum.
+
+                        Integer ac odio mattis, maximus nibh eu, congue massa. Donec interdum, odio a aliquam tristique,
+                        metus velit aliquet mauris, nec lobortis lorem quam sit amet nisi. Morbi egestas, mauris a
+                        rhoncus fringilla, augue nunc gravida nunc, sed tempus ex turpis eu massa. Nunc tincidunt lectus
+                        at mauris finibus congue. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas.</p>
+                </div>
+            </div>
+            <div class="eventos-card mapa">
+                <a>Mapa</a>
+            </div>
+
+
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid" style="background-color: #4b4b4b">
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="footer">
+                    <div class="logo"><img src="https://doity.com.br/theme/Doity/img/logo_doity.png"
+                                           alt="logo da doity"></div>
+                    <div class="links">
+                        <a>SOBRE A DOITY</a>
+                        <a>BLOG</a>
+                    </div>
+                    <div class="redes-sociais">
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-instagram"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-twitter"></i></a>
+                        <a class="btn icon-outside-circle icon-footer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
